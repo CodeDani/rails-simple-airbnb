@@ -1,0 +1,19 @@
+<div class="map" style="background-image: url('https://source.unsplash.com/random');"></div>
+
+<div class="card-container">
+  <div class="flat-show-card">
+    <h1><%= @flat.name %></h1>
+    <p><%= @flat.address %></p>
+  </div>
+  <div class="flat-show-card">
+    <h2>A bit more about this flat:</h2>
+    <p><%= @flat.description %></p>
+  </div>
+  <div class="flat-show-card">
+    <h2>Details:</h2>
+    <i class="fa fa-users" aria-hidden="true"></i><%= @flat.number_of_guests %>
+    <i class="fa fa-price" aria-hidden="true"></i><%= @flat.price_per_night %>
+  </div>
+</div>
+
+<%= link_to "Back", flats_path  %>
